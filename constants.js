@@ -1,5 +1,6 @@
 const FILLCOLOR_COMPLETED = '#ffef47';
-const FILLCOLOR_INPROGRESS = '#f8fad1';
+// const FILLCOLOR_INPROGRESS = '#f8fad1';
+const FILLCOLOR_INPROGRESS = '#9347ff';
 const FILLCOLOR_NOTANALYZED = '#dddddd';
 
 const BORDERCOLOR = 'white';
@@ -25,6 +26,10 @@ const STATES_COMPLETED = [
 ];
 
 const STATES_INPROGRESS = [
+    'Hawaii',
+    'Nevada',
+    'Ohio',
+    'Virginia'
 ];
 
 const STATES_NOTANALYZED = [
@@ -33,7 +38,6 @@ const STATES_NOTANALYZED = [
     'Arkansas',
     'Connecticut',
     'Delaware',
-    'Hawaii',
     'Idaho',
     'Illinois',
     'Indiana',
@@ -49,13 +53,11 @@ const STATES_NOTANALYZED = [
     'Missouri',
     'Montana',
     'Nebraska',
-    'Nevada',
     'New Hampshire',
     'New Jersey',
     'New Mexico',
     'New York',
     'North Dakota',
-    'Ohio',
     'Oklahoma',
     'Oregon',
     'Rhode Island',
@@ -64,7 +66,6 @@ const STATES_NOTANALYZED = [
     'Tennessee',
     'Utah',
     'Vermont',
-    'Virginia',
     'Washington',
     'West Virginia',
     'Wyoming',
