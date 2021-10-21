@@ -15,23 +15,23 @@ function initMap () {
     mapdata = mapdata.filter(function (state) {
     	return state.name != 'District of Columbia';
     });
-    [
-        { name: "Texas", xfuss: -0.35, yfuss: +0.20 },
-        { name: "Oklahoma", xfuss: +0.15, yfuss: +0.40 },
-        { name: "Kansas", xfuss: +0.05, yfuss: +0.40 },
-        { name: "Georgia", xfuss: -0.30, yfuss: -0.40 },
-        { name: "Wisconsin", xfuss: -0.50, yfuss: +0.10 },
-    ].forEach(function (statelabelpixelfuss) {
-        var state = mapdata.filter(function (state) { return state.name == statelabelpixelfuss.name; })[0];
-        if (! state) throw new Error("Pixel fussing did not find state " + statelabelpixelfuss.name);
+    // [
+    //     { name: "Texas", xfuss: -0.35, yfuss: +0.20 },
+    //     { name: "Oklahoma", xfuss: +0.15, yfuss: +0.40 },
+    //     { name: "Kansas", xfuss: +0.05, yfuss: +0.40 },
+    //     { name: "Georgia", xfuss: -0.30, yfuss: -0.40 },
+    //     { name: "Wisconsin", xfuss: -0.50, yfuss: +0.10 },
+    // ].forEach(function (statelabelpixelfuss) {
+    //     var state = mapdata.filter(function (state) { return state.name == statelabelpixelfuss.name; })[0];
+    //     if (! state) throw new Error("Pixel fussing did not find state " + statelabelpixelfuss.name);
 
-        var path = state.path;
-        var copy = { path: path };
+    //     var path = state.path;
+    //     var copy = { path: path };
 
-        Highcharts.seriesTypes.map.prototype.getBox.call({}, [copy]);
-        state.middleX = ((path[0][1] + path[1][1]) / 2 - copy._minX) / (copy._maxX - copy._minX) + statelabelpixelfuss.xfuss;
-        state.middleY = ((path[0][2] + path[2][2]) / 2 - copy._minY) / (copy._maxY - copy._minY) + statelabelpixelfuss.yfuss;
-    });
+    //     Highcharts.seriesTypes.map.prototype.getBox.call({}, [copy]);
+    //     state.middleX = ((path[0][1] + path[1][1]) / 2 - copy._minX) / (copy._maxX - copy._minX) + statelabelpixelfuss.xfuss;
+    //     state.middleY = ((path[0][2] + path[2][2]) / 2 - copy._minY) / (copy._maxY - copy._minY) + statelabelpixelfuss.yfuss;
+    // });
 
     // prepare the series data: a datum entry is a {} object with the state's .name
     const dataseries_completed = STATES_COMPLETED.map(function (name) { return { name: name }; });
