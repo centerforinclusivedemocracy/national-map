@@ -23,13 +23,13 @@ const STATES_COMPLETED = [
     'Texas',
     'Pennsylvania',
     'North Carolina',
+    'Virginia',
     'Wisconsin',
 ];
 
 const STATES_INPROGRESS = [
     'Hawaii',
-    'Nevada',
-    'Virginia'
+    'Nevada'
 ];
 
 const STATES_NOTANALYZED = [
