@@ -18,6 +18,7 @@ const STATES_COMPLETED = [
     'Colorado',
     'Florida',
     'Georgia',
+    'Hawaii',
     'Michigan',
     'Ohio',
     'Texas',
@@ -28,7 +29,6 @@ const STATES_COMPLETED = [
 ];
 
 const STATES_INPROGRESS = [
-    'Hawaii',
     'Nevada'
 ];
 
