@@ -86,7 +86,7 @@ function initMap () {
         },
         series: [
             { name: 'Available', id: 'completed', color: FILLCOLOR_COMPLETED, borderColor: BORDERCOLOR, showInLegend: true, data: dataseries_completed },
-            { name: 'Coming Soon', id: 'inprogress', color: FILLCOLOR_INPROGRESS, borderColor: BORDERCOLOR, showInLegend: true, data: dataseries_inprogress },
+            { name: 'Coming Soon', id: 'inprogress', color: FILLCOLOR_INPROGRESS, borderColor: BORDERCOLOR, showInLegend: false, data: dataseries_inprogress },
             { name: 'Not Analyzed', id: 'notanalyzed', color: FILLCOLOR_NOTANALYZED, borderColor: BORDERCOLOR, showInLegend: false, data: dataseries_notanalyzed },
     	],
     };
